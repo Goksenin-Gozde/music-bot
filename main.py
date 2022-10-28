@@ -3,7 +3,7 @@ import search_engine
 
 
 if __name__ == '__main__':
-    sp = auth_manager.getSpotifyClient()
+    sp = auth_manager.get_spotify_client()
     track_name = input("Choose a track name to search: ")
     songs = search_engine.search_track(sp, track_name=track_name, limit=5)
     for item in songs:
